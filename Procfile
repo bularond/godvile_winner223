@@ -1,1 +1,1 @@
-heroku worker: python3 ./telegram/__init__.py
+worker: python3 ./telegram/__init__.py
