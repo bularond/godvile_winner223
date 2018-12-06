@@ -6,7 +6,7 @@ bot = telebot.TeleBot("714110486:AAG6qYzhscu2yFy9cDBylNVJSUymC96A040")
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
     print(message.text)
-    bot.send_message(message.from_user.id, "Hello! I am HabrahabrExampleBot. How can i help you?")
+    bot.send_message(message.from_user.id, "Test link with github")
 
 
 bot.polling(none_stop = True, interval = 0)
