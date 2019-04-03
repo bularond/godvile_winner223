@@ -35,7 +35,7 @@ def gen_new_messeges():
     for key in messege_form.keys():
         if(now_data[key] != old_data[key]):
             messages.append(messege_form[key].format(now_data[key]))
-    return messege_form
+    return messages
 
 def send_messages(messeges):
     for messege in messeges:
@@ -45,6 +45,7 @@ def send_messages(messeges):
 
 if __name__ == '__main__':
     update_data()
+    sleep(10)
     while True:
         update_data()
         send_messages(gen_new_messeges())
