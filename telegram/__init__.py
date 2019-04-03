@@ -39,6 +39,7 @@ def gen_new_messeges():
 
 def send_messages(messeges):
     for messege in messeges:
+        print("Send message", messege)
         bot.send_message(CHAT_ID, messege)
     time.sleep(1)
 
